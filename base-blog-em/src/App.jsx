@@ -1,8 +1,8 @@
-import { Posts } from './Posts';
 import './App.css';
 
 import { QueryClient, QueryClientProvider } from 'react-query';
-// import { Posts } from './Posts';
+import { ReactQueryDevtools } from 'react-query/devtools';
+import { Posts } from './Posts';
 
 const queryClient = new QueryClient();
 
@@ -13,6 +13,7 @@ function App() {
       <div className="App">
         <h1>Blog &apos;em Ipsum</h1>
         <Posts />
+        <ReactQueryDevtools />
       </div>
     </QueryClientProvider>
   );
